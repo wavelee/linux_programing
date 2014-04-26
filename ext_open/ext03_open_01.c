@@ -23,14 +23,19 @@
 int main(int argc,char *argv[]){
 	int fd = -1;
 	char filename[] = "test.txt";
-	fd = open(filename,O_RDWR);	
+	/*创建文件*/
+	fd = open(filename, O_RDWR|O_CREAT|O_EXCL,S_IRWXU);	
+	/*文件已存在*/
 	if (-1 ==  fd){
 		printf("Open file %s failure!,fd:%d\n",filename,fd);
+		/*打开文件*/
+		fd = open(filename, O_RDWR);
+		printf("fd:%d\n",fd);
 	}else{
 		printf("Open file %s success,fd:%d\n",filename,fd);
 	}
 
-
+	/*关闭文件*/
 	close(fd);
 	
 	return 0;
