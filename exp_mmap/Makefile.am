@@ -1,0 +1,3 @@
+AUTOMAKE_OPTIONS=foreign
+bin_PROGRAMS=exp_mmap
+exp_mmap_SOURCES=exp_mmap.c

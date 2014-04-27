@@ -1,0 +1,3 @@
+AUTOMAKE_OPTIONS=foreign
+bin_PROGRAMS=exp_hole
+exp_hole_SOURCES=exp_hole.c

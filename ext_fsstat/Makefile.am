@@ -1,0 +1,3 @@
+AUTOMAKE_OPTIONS=foreign
+bin_PROGRAMS=ext_stat
+ext_stat_SOURCES=ext_stat.c

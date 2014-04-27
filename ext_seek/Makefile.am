@@ -1,0 +1,3 @@
+AUTOMAKE_OPTIONS=foreign
+bin_PROGRAMS=ext_seek
+ext_seek_SOURCES=ext_seek.c
